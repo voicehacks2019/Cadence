@@ -31,7 +31,6 @@ module.exports.function = function updateQuiz(quiz, answer) {
     quiz.textToSpeak = buildQuestionToSpeak(quiz.questions[i + 1]);
     quiz.index++;
   } else {
-    console.log('inside else')
     var suggestion = "";
     var suggestionImage = "";
     if (quiz.title == 'Parking') {
@@ -65,6 +64,7 @@ module.exports.function = function updateQuiz(quiz, answer) {
         }
       }
     }
+    
     if (quiz.title == 'Household') {
       // console.log('inside household')
       // console.log(quiz.questions)

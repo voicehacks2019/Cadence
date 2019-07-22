@@ -23,7 +23,7 @@ layout-macro-def(QuizDetails) {
       slot2 {
         content {
           primary {
-            template ("#{value(quiz.title)}")
+            template (" #{value(quiz.title)}")
           }
           secondary {
             template ("#{number(size(quiz.questions))} #{macro('QUESTIONS')}")
