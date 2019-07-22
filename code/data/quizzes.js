@@ -1,5 +1,5 @@
 module.exports = [
-  // Start of funny quiz
+
   {
     title: "Parking",
     tags: ["parking", "car", "motorcyle", "rv", "trailer", "boat"], //used to find this quiz
@@ -8,7 +8,7 @@ module.exports = [
     },
     questions: [{
       question: "What type of vehicle are you storing?",
-      optionsURLs: ["/images/bike.jpg", "/images/car.jpg","/images/rv.jpg", "/images/boat.jpg"],
+      optionsURLs: ["/images/bike.jpg", "/images/car.jpg", "/images/rv.jpg", "/images/boat.jpg"],
       options: ["motorcycle", "car", "rv", "boat"],
       answer: 0, // Corresponds to "Mice cream"
     }, {
@@ -27,15 +27,18 @@ module.exports = [
     questions: [{
         question: "How many bed rooms do you need to store?",
         options: ["I'm moving", "I'm selling my property", "I'm subletting or AirBnB-ing my property", "I'm downsizing",
-          "I'm a college student in need of temporary storage", "I'm remodelling a room(s) in my home"],
-        answer: 0, 
+          "I'm a college student in need of temporary storage", "I'm remodelling a room(s) in my home"
+        ],
+      optionsURLs: [],
+        answer: 0,
       },
       {
         question: "How many rooms would you be storing?",
         options: ["closet", "1 room", "2 rooms", "3 rooms", "4 rooms", "5 rooms", "6+ rooms"],
+        optionsURLs: [],
         answer: 0,
         explanation: "This helps us.",
-      }, 
+      },
       //           {
       //   question: "Do you prefer full height, or would a smaller 4 ft height unit work for you?",
       //   options: ["full-height", "smaller"],

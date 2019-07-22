@@ -14,7 +14,7 @@ input-view {
           cell-card {
             slot1 {
               image {
-                url ("#{value(option.imageURL)}")
+                url ("#[{value(option.imageURL)}]")
                 shape (Square)
               }
             }
