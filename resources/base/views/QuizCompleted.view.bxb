@@ -1,0 +1,22 @@
+// See the UpdateQuiz.dialog for localized strings
+
+result-view{
+  match: Quiz(quiz){
+    from-output:StartQuiz(action)
+  }
+  
+  message ("[#{value(quiz.suggestion)}]")
+    
+  render{
+    layout-macro (QuizCompleted){
+      param (quiz){
+        expression (quiz)
+      }
+    }
+  }
+   conversation-drivers {
+    conversation-driver {
+      template("#{macro('ANOTHER_QUIZ')}")
+    }
+  }
+}
