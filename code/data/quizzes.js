@@ -25,7 +25,7 @@ module.exports = [
       url: "/images/household.jpg",
     },
     questions: [{
-        question: "How many bed rooms do you need to store?",
+        question: "Why are you looking for storage?",
         options: ["I'm moving", "I'm selling my property", "I'm subletting or AirBnB-ing my property", "I'm downsizing",
           "I'm a college student in need of temporary storage", "I'm remodelling a room(s) in my home"
         ],
