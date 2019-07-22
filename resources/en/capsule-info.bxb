@@ -1,11 +1,11 @@
 capsule-info {
-  display-name (Example Quiz)
+  display-name (StorageMaret Size Guide)
   developer-name (Viv Labs, Inc.)
-  icon-asset (icons/correct.png)
-  description ("An example capsule that demonstrates how to build a quiz")
-  website-url (https://bixbydevelopers.com/)
+  icon-asset (images/storage-background.svg)
+  description ("StorageMart Size Capsule")
+  website-url (https://storage-mart.com/)
   search-keywords{
     keyword (quiz)
   }
-  dispatch-name (Example Quiz)
+  dispatch-name (StorageMart Size Capsule)
 }

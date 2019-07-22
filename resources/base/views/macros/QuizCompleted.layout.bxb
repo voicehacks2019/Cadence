@@ -11,48 +11,45 @@ layout-macro-def (QuizCompleted){
   content{
     section{
       content{
-        title-area {
-          slot1 {
-            text {
-              style(Title_M)
-              value("#{macro('QUESTION_REVIEW')}:")
-            }
-          }
+        image{
+          aspect-ratio(4:3)
+          object-fit (Contain)
+          url ("[#{value(quiz.suggestionImage)}]")
         }
-        for-each (quiz.questions){
-          as (question) {
-            paragraph {
-              style (Title_S)
-              value ("#{macro('QUESTION')}: #{value(question.text)}")
-            }
-            cell-area {
-              slot2 {
-                content {
-                  order (PrimarySecondary)
-                  primary {
-                    if (exists(question.answer)) {
-                      template ("'#{title(question.answer)}'")
-                    }
-                  }
-                }
-              }
-            }
-            if (question.correct == false) {
-              paragraph {
-                style (Detail_L)
-                value {
-                  template ("[#{value(question.correctAnswer.explanation)}]")
-                }
-              }
-            }
-            paragraph {
-              value {
-                template ("")
-              }
-            }
-            divider
-          }
-        }
+        // for-each (quiz.questions){
+        //   as (question) {
+        //     paragraph {
+        //       style (Title_S)
+        //       value ("#{macro('QUESTION')}: #{value(question.text)}")
+        //     }
+        //     cell-area {
+        //       slot2 {
+        //         content {
+        //           order (PrimarySecondary)
+        //           primary {
+        //             if (exists(question.answer)) {
+        //               template ("'#{title(question.answer)}'")
+        //             }
+        //           }
+        //         }
+        //       }
+        //     }
+        //     if (question.correct == false) {
+        //       paragraph {
+        //         style (Detail_L)
+        //         value {
+        //           template ("[#{value(question.correctAnswer.explanation)}]")
+        //         }
+        //       }
+        //     }
+        //     paragraph {
+        //       value {
+        //         template ("")
+        //       }
+        //     }
+        //     divider
+        //   }
+        // }
       }
     }
   }

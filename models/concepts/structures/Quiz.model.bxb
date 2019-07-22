@@ -52,6 +52,12 @@ structure (Quiz) {
     min (Optional) max (One)
     visibility (Private)
   }
+  property (suggestionImage) {
+    description (Image to show with suggestion)
+    type (core.Text)
+    min (Optional) max (One)
+    visibility (Private)
+  }
   features{
     transient
   }

@@ -5,9 +5,7 @@ input-view {
     Quiz(quizzes)
   }
 
-  message {
-    template ("What do you need to store?")
-  }
+  message ("What kind of storage do you need?")
 
   render {
     if ($handsFree) {  // If hands free mode, read out the quiz options and provide navigation guidance to the user

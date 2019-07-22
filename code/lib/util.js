@@ -98,12 +98,15 @@ function buildAcceptedAnswers(answer, options) {
 
 function buildQuizzes(searchTerm){
   var quizzes = require("../data/quizzes");
+  console.log(quizzes);
   if (searchTerm) {
     const foundQuiz = findItems(quizzes, searchTerm)
     if(foundQuiz.length > 0){
       quizzes = foundQuiz;
     }
   }
+  console.log(quizzes);
+  
   var formattedQuizzes = [];
   //read the questions in the quiz and initialize the state
   for (var i=0; i<quizzes.length; i++) {
@@ -121,6 +124,7 @@ function buildQuizzes(searchTerm){
       formattedQuizzes.push(quiz);
     }
   }
+  console.log(formattedQuizzes);
   return formattedQuizzes;
 }
 
