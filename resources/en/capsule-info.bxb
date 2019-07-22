@@ -1,7 +1,7 @@
 capsule-info {
   display-name (StorageMaret Size Guide)
   developer-name (Viv Labs, Inc.)
-  icon-asset (images/storage-background.svg)
+  icon-asset (images/smlogo.svg)
   description ("StorageMart Size Capsule")
   website-url (https://storage-mart.com/)
   search-keywords{

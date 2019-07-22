@@ -12,5 +12,11 @@ structure (Option) {
     min (Required) max (One)
     visibility (Private)
   }
+  property (imageURL) {
+    type (core.Text)
+    min (Optional)
+    max (One)
+    visibility (Private)
+  }
 
 }
