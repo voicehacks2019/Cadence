@@ -12,10 +12,16 @@ input-view {
       selection-of (action.quiz.questions[action.quiz.index].options) {
         where-each (option) {
           cell-card {
+            slot1 {
+              image {
+                url ("#{value(option.imageURL)}")
+                shape (Square)
+              }
+            }
             slot2 {
               content {
                 primary {
-                  template ("[#{value(option.alias)}. ]#{value(option.text)}")
+                  template ("#{title(option.text)}")
                 }
               }
             }

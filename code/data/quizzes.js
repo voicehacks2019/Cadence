@@ -8,10 +8,12 @@ module.exports = [
     },
     questions: [{
       question: "What type of vehicle are you storing?",
+      optionsURLs: ["/images/bike.jpg", "/images/car.jpg","/images/rv.jpg", "/images/boat.jpg"],
       options: ["motorcycle", "car", "rv", "boat"],
       answer: 0, // Corresponds to "Mice cream"
     }, {
       question: "Does your vehicle need to be stored indoors?",
+      optionsURLs: ["/images/icons/correct.png", "/images/icons/incorrect.png"],
       options: ["Yes", "No"],
       answer: 0, // Corresponds to "Mice cream"
     }, ],
