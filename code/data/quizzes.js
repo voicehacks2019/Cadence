@@ -4,7 +4,7 @@ module.exports = [
     title: "Parking",
     tags: ["parking", "car", "motorcyle", "rv", "trailer", "boat"], //used to find this quiz
     image: {
-      url: "/images/storage-background.svg",
+      url: "/images/parking.jpg",
     },
     questions: [{
       question: "What type of vehicle are you storing?",
@@ -22,7 +22,7 @@ module.exports = [
     title: "Household",
     tags: ["Household", "house", "appartment", "stuff", "things", "stuff and things", "home"], //used to find this quiz
     image: {
-      url: "/images/storage-background.svg",
+      url: "/images/household.jpg",
     },
     questions: [{
         question: "How many bed rooms do you need to store?",
