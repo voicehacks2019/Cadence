@@ -31,6 +31,7 @@ module.exports.function = function updateQuiz(quiz, answer) {
     quiz.textToSpeak = buildQuestionToSpeak(quiz.questions[i + 1]);
     quiz.index++;
   } else {
+    var console = require('console')
     console.log('inside else')
     var suggestion = "";
     var suggestionImage = "";

@@ -47,7 +47,8 @@ function buildQuestionFromJson(questionJson) {
     for (var i=0; i<questionJson.options.length; i++) {
       options.push({
         text: questionJson.options[i],
-        alias: String.fromCharCode('A'.charCodeAt(0) + i)
+        alias: String.fromCharCode('A'.charCodeAt(0) + i),
+        imageURL: questionJson.optionsURLs[i]
       })
     }
   }
