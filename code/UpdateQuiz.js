@@ -68,20 +68,29 @@ module.exports.function = function updateQuiz(quiz, answer) {
     if (quiz.title == 'Household') {
       // console.log('inside household')
       // console.log(quiz.questions)
-      if (quiz.questions[0].answer == '1') {
-        suggestion += "We recommend 1 storage unit"
+      if (quiz.questions[1].answer == 'closet') {
+        suggestion += "I think a 5x5 unit would fit your needs."
         suggestionImage = "images/sm-size-guide.png"
-      } else {
-        suggestion += "We recommend 10 storage units"
+      } else if (quiz.questions[1].answer == '1 room') {
+        suggestion += "I think a 5x10 unit would fit your needs. Ready to book your unit? Our storage experts can help."
         suggestionImage = "images/sm-size-guide.png"
+      } else if (quiz.questions[1].answer == '2 rooms') {
+        suggestion += "I think a 5x15 unit would fit your needs. Ready to book your unit? Our storage experts can help."
+        suggestionImage = "images/sm-size-guide.png"
+      } else if (quiz.questions[1].answer == '3 rooms') {
+        suggestion += "I think a 10x10 unit would fit your needs. Ready to book your unit? Our storage experts can help."
+        suggestionImage = "images/med-size-guide.png"
+      } else if (quiz.questions[1].answer == '4 rooms') {
+        suggestion += "I think a 10x15 unit would fit your needs. Ready to book your unit? Our storage experts can help."
+        suggestionImage = "images/large-size-guide.png"
+      } else if (quiz.questions[1].answer == '5 rooms') {
+        suggestion += "I think a 10x20 unit would fit your needs. Ready to book your unit? Our storage experts can help."
+        suggestionImage = "images/large-size-guide.png"
+      }else if (quiz.questions[1].answer == '6+ rooms') {
+        suggestion += "I think a 10x20 unit would fit your needs. Ready to book your unit? Our storage experts can help."
+        suggestionImage = "images/extra-large-size-guide.png"
       }
-      if (quiz.questions[1].answer == 'Yes') {
-        suggestion += " with climate control."
-        suggestionImage = "images/sm-size-guide.png"
-      } else {
-        suggestion += " without climate control."
-        suggestionImage = "images/sm-size-guide.png"
-      }
+     
     }
    
     quiz.suggestion = suggestion;

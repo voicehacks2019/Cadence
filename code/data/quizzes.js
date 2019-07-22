@@ -33,12 +33,13 @@ module.exports = [
         options: ["closet", "1 room", "2 rooms", "3 rooms", "4 rooms", "5 rooms", "6+ rooms"],
         answer: 0,
         explanation: "This helps us.",
-      }, {
-        question: "Do you prefer full height, or would a smaller 4 ft height unit work for you?",
-        options: ["full-height", "smaller"],
-        answer: 0,
-        explanation: "This helps us.",
-      },
+      }, 
+      //           {
+      //   question: "Do you prefer full height, or would a smaller 4 ft height unit work for you?",
+      //   options: ["full-height", "smaller"],
+      //   answer: 0,
+      //   explanation: "This helps us.",
+      // },
     ],
   },
   // End of funny quiz
